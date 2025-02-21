@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Task</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+<h1>Edit Task</h1>
+
+<form action="/tasks/edit/{task.id}" method="post" th:action="@{/tasks/edit/{id}(id=${task.id})}">
+    <div>
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" th:value="${task.title}" required>
+    </div>
+
+    <div>
+        <label for="description">Description</label>
+        <textarea id="description" name="description" required th:text="${task.description}"></textarea>
+    </div>
+
+    <div>
+        <label for="status">Status</label>
+        <select id="status" name="status" required>
+            <option value="Pending" th:selected="${task.status == 'Pending'}">Pending</option>
+            <option value="In Progress" th:selected="${task.status == 'In Progress'}">In Progress</option>
+            <option value="Completed" th:selected="${task.status == 'Completed'}">Completed</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="dueDate">Due Date</label>
+        <input type="datetime-local" id="dueDate" name="dueDate" th:value="${task.dueDate}" required>
+    </div>
+
+    <button type="submit">Save Changes</button>
+</form>
+
+<br>
+<a href="/tasks">Back to Task List</a>
+</body>
+</html>

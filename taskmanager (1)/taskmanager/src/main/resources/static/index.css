@@ -1,0 +1,119 @@
+/* Resetare stiluri implicite */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stiluri globale */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    color: #777;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #000000 !important;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Container principal */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Stiluri pentru tabelul de task-uri */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #ecf0f1;
+}
+
+/* Stiluri pentru butoane și linkuri */
+button, a {
+    background-color: #2980b9; /* Albastru închis pentru fundal */
+    color: #ffffff; /* Text alb pentru contrast bun */
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;  /* Asigură-te că butonul este vizibil ca un bloc inline */
+    text-align: center; /* Aliniază textul în buton */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adăugăm un efect de umbră pentru a evidenția butonul */
+}
+
+button:hover, a:hover {
+    background-color: #3498db; /* Luminare la hover */
+}
+
+/* Formulare */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    font-size: 1rem;
+    color: #2c3e50;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+/* Stiluri pentru linkuri de navigare */
+a {
+    font-size: 1.1rem;
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #034e80;
+}
