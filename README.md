@@ -5,20 +5,31 @@ Task Manager is a **web-based application** designed to help users manage their 
 ## 🎯 Key Features
 
 ✔️ **Task List Management** - View all tasks in an organized table.
+
 ✔️ **Task Creation** - Easily add new tasks with a title, description, status, and due date.
+
 ✔️ **Task Editing** - Modify task details directly from the interface.
+
 ✔️ **Task Deletion** - Remove completed or unwanted tasks with a single click.
+
 ✔️ **User-Friendly Interface** - Simple and minimalistic UI for seamless navigation.
+
 ✔️ **Database Integration** - Uses PostgreSQL for persistent data storage.
 
 ## 🚀 Technologies Used
 
 ⚡ **Java 17** - The core programming language.
+
 ⚡ **Spring Boot** - Framework used for backend development.
+
 ⚡ **Spring Data JPA** - Facilitates database operations.
+
 ⚡ **Thymeleaf** - HTML template engine for dynamic UI rendering.
+
 ⚡ **PostgreSQL** - Database system for storing task data.
+
 ⚡ **HTML & CSS** - Frontend for creating a responsive user interface.
+
 ⚡ **Maven** - Dependency and build management.
 
 ## 🛠 Code Structure
